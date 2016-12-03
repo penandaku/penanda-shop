@@ -107,3 +107,108 @@ $(document).ready(function(){
     })
 });
 
+$(document).ready(function(){
+    $(".form-contact form").submit(function() {
+        var nama        = $("[name='nama']").val();
+        var email       = $("[name='email']").val();
+        var message     = $("[name='message']").val();
+        //conditions
+        if(nama.length == 0){
+            setTimeout(function() {
+                /*toastr.error('Email is still empty');*/
+                var opts = {
+                    "debug": false,
+                    "positionClass": "toast-top-right",
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "2000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+                toastr.error("Masukkan Nama Lengkap Anda.", "ERROR !", opts);
+            }, 1000);
+        }
+        else if(email.length == 0){
+            setTimeout(function() {
+                /*toastr.error('Email is still empty');*/
+                var opts = {
+                    "debug": false,
+                    "positionClass": "toast-top-right",
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "2000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+                toastr.error("Masukkan Email  Anda.", "ERROR !", opts);
+            }, 1000);
+        }else if(email !== validateEmail()) {
+            setTimeout(function() {
+                /*toastr.error('Email is still empty');*/
+                var opts = {
+                    "debug": false,
+                    "positionClass": "toast-top-right",
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "2000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+                toastr.error("Alamat Email  Tidak Valid.", "ERROR !", opts);
+            }, 1000);
+        }else if(message.length < 10) {
+            setTimeout(function() {
+                /*toastr.error('Email is still empty');*/
+                var opts = {
+                    "debug": false,
+                    "positionClass": "toast-top-right",
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "2000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+                toastr.error("Message  Minimal 10 Character .", "ERROR !", opts);
+            }, 1000);
+        }else if(message.length == 0) {
+            setTimeout(function() {
+                /*toastr.error('Email is still empty');*/
+                var opts = {
+                    "debug": false,
+                    "positionClass": "toast-top-right",
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "2000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+                toastr.error("Masukkan Message  Anda.", "ERROR !", opts);
+            }, 1000);
+        }else{
+
+            return true;
+        }
+        return false;
+    })
+});
+

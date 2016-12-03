@@ -8,22 +8,27 @@
 					<div class="contact-label" style="border-bottom: 1px solid #ddd;font-family: Roboto;font-weight: 300;font-size: 25px;margin-bottom: 10px">
 						Kirim Pesan
 					</div>
-					<form>
+					<div class="form-contact">
+					<?php
+						$attributes = array('id' => 'frm_login');
+						echo form_open('pages/save?source=header&utf8=✓', $attributes)
+					?>
 					  <div class="form-group">
 					    <label for="nama" style="font-family: Roboto;font-weight: 300">Nama Lengkap</label>
-					    <input type="text" class="form-control" id="nama">
+					    <input type="text"  name ="nama" class="form-control" id="nama">
 					  </div>
 					  <div class="form-group">
 					    <label for="email" style="font-family: Roboto;font-weight: 300">Alamat Email</label>
-					    <input type="email" class="form-control" id="email">
+					    <input type="text" name ="email" class="form-control" id="email">
 					  </div>
 					  <div class="form-group">
 					    <label for="subject" style="font-family: Roboto;font-weight: 300"> Isi Pesan</label>
-					    <textarea class="form-control" rows="6"></textarea>
+					    <textarea class="form-control" name ="message" rows="6"></textarea>
 					  </div>					  
 
 					  <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending..." class="penandaku-btn-contact btn btn-md btn-success"><i class="fa fa-send"></i> Kirim Pesan</button>
-					</form>
+					<?php echo form_close() ?>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -10,7 +10,7 @@
 			<div class="col-md-4">
 				<div class="card" style="border-top: 2px solid green;">
 					<div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);">
-						<div class="other-products" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);margin-bottom: 15px;padding-bottom: 5px;font-size: 18px;"">
+						<div class="products-other" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);margin-bottom: 15px;padding-bottom: 5px;font-size: 18px;"">
 						<label style="font-family: Roboto;font-weight: 300;">
 							<span> Best Products</span>
 						</label>
@@ -19,7 +19,7 @@
 			</div>
 			<div class="card" style="border-top: 2px solid green;">
 				<div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);">
-					<div class="other-products" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);margin-bottom: 15px;padding-bottom: 5px;font-size: 18px;"">
+					<div class="follow" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);margin-bottom: 15px;padding-bottom: 5px;font-size: 18px;"">
 					<label style="font-family: Roboto;font-weight: 300;">
 						<span> Follow Us!</span>
 					</label>
