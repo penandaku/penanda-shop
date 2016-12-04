@@ -26,8 +26,9 @@
             <span class="icon-bar"></span>
           </button>
           <a class="penandaku-logo-navbar" href="<?php print base_url() ?>">
-               <img class="penandaku-logo" src="<?php print base_url('resources/img/logo.png') ?>" alt="Penandaku.com - Simple Apps for Save and Access <br> Bookmark online" />
+               <img class="penandaku-logo" src="<?php print base_url('resources/img/logo.png') ?>" alt="" /></a>
           </a>
+          <span class="green-color" style="color: green"><strong> BETA </strong></span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <?php if($this->session->userdata('auth_id')) { ?>

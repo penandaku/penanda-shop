@@ -19,9 +19,9 @@
                         ORDER VIA
                     </label>
                     <div class="order" style="margin-top: 10px;font-family: Roboto;font-weight: 300">
-                        <a href="<?php echo $data_products->link_tokopedia ?>/" class="btn btn-success" style="background-color: #3fa23f;border-color: #3fa23f"><i class="fa fa-shopping-bag"></i> Tokopedia</a>
-                        <a href="<?php echo $data_products->link_bukalapak ?>/" class="btn btn-success" style="background-color: #d4315d;border-color: #d4315d"><i class="fa fa-shopping-basket"></i> Bukalapak</a>
-                        <a href="<?php echo $data_products->link_shopee ?>/" class="btn btn-success" style="background-color: #d65f17;border-color: #d65f17"><i class="fa fa-shopping-cart"></i> Shopee</a>
+                        <a href="<?php echo $data_products->link_tokopedia ?>/" target="_BLANK" class="btn btn-success btn-tokopedia" style="background-color: #3fa23f;border-color: #3fa23f"><i class="fa fa-shopping-bag"></i> Tokopedia</a>
+                        <a href="<?php echo $data_products->link_bukalapak ?>/" target="_BLANK" class="btn btn-success btn-bukalapak" style="background-color: #d4315d;border-color: #d4315d"><i class="fa fa-shopping-basket"></i> Bukalapak</a>
+                        <a href="<?php echo $data_products->link_shopee ?>/" target="_BLANK" class="btn btn-success btn-shopee" style="background-color: #d65f17;border-color: #d65f17"><i class="fa fa-shopping-cart"></i> Shopee</a>
                     </div>
                 </div>
             </div>
