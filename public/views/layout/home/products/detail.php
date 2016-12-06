@@ -69,11 +69,31 @@
                             <span> Other Products</span>
                         </label>
                     </div>
-                <div class="other-products">
-                    <img src="<?php echo base_url('resources/products/'.$data_products->thumbnail.'')?>" alt="Person" width="96" height="96">
-                    <a href="" style="color: #333;text-decoration: none"> JAKET HODDIE GITHUB</a>
-                </div>
-                </div>
+                <?php
+                $products_id = $data_products->id_products;
+                $label_id    = $data_products->label_id;
+                $query = $this->db->query("SELECT * FROM tbl_products WHERE label_id ='$label_id' AND id_products !='$products_id'");
+                $i = 1;
+                if($query->num_rows()== 0)
+                {
+                    echo '<div class="alert alert-danger" style="font-family:Roboto;">
+                             <i class="fa fa-exclamation-circle"></i> Tidak ada products terkait.
+                          </div>';
+                }
+                foreach($query->result() as $h):
+
+                    ?>
+                    <div class="other-products">
+                        <img src="<?php echo base_url('resources/products/'.$h->thumbnail.'')?>" alt="Person" width="96" height="96">
+                        <a href="<?php echo base_url() ?>products/<?php echo $h->slug_products ?>/" style="color: #333;text-decoration: none"> <?php echo $h->nama_products ?></a>
+                    </div>
+                <?php  if($i++ ==5)
+                    break;
+                ?>
+                <?php
+                endforeach;
+                ?>
+            </div>
             </div>
             <div class="card" style="border-top: 2px solid green;">
                 <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);">

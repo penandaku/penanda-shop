@@ -508,7 +508,7 @@ body {
   line-height: 50px;
   border-radius: 25px;
   background-color: #f1f1f1;
-  margin-top: 8px;
+  margin-top: 10px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
   transition-duration: .2s;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
@@ -525,6 +525,8 @@ body {
 
 .other-products:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 8px 16px 0 rgba
 }
 
 .btn-tokopedia {
@@ -536,6 +538,8 @@ body {
 
 .btn-tokopedia:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 8px 16px 0 rgba
 }
 
 .btn-bukalapak {
@@ -547,6 +551,8 @@ body {
 
 .btn-bukalapak:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 8px 16px 0 rgba
 }
 
 .btn-shopee {
@@ -569,8 +575,12 @@ body {
 
 .penandaku-btn-contact:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 8px 16px 0 rgba
 }
 
 .penandaku-products:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

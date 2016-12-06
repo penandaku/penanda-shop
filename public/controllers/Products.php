@@ -36,7 +36,6 @@ class Products extends CI_Controller {
 				'keywords'		=> '',
 				'descriptions'	=> $this->web->get_url($url)->descriptions_products,
                 'products'      => TRUE,
-                'other_products'=> $this->web->get_other_products($category),
                 'disqus'        => $data['disqus']  = $this->disqus->get_html()
 			);
 		$this->load->view('part/header', $data);

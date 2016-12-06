@@ -4,10 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="icon" href="<?php print base_url('resources/img/favicon.png') ?>">
     <title><?php print $title ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Fika Ridaul Maulayya">
+    <meta name="robots" content="no-cache">
+    <meta name="description" content="<?php if(isset($descriptions)) { echo $descriptions; } ?>">
+    <meta name="keywords" content="<?php if(isset($keywords)) { echo $keywords; } ?>">
+    <meta property="og:url" content="http://localhost/pondokkode//">
+    <meta property="og:site_name" content="Penanda Shop">
+    <meta property="og:title" content="<?php if(isset($title)) { echo $title; } ?>">
+    <meta property="og:description" content="<?php if(isset($descriptions)) { echo $descriptions; } ?>">
+    <meta property="og:image" content="">
+    <meta property="twitter:site" content="@penanda_shop">
+    <meta property="twitter:site:id" content="">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="<?php if(isset($title)) { echo $title; } ?>">
+    <meta property="twitter:description" content="<?php if(isset($descriptions)) { echo $descriptions; } ?>">
+    <meta property="twitter:image:src" content="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="<?php print base_url('resources/css/font-awesome/css/font-awesome.css') ?>">
     <link rel="stylesheet" href="<?php print base_url('resources/css/bootstrap.min.css') ?>">

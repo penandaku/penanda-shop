@@ -69,10 +69,4 @@ class Web extends CI_Model
         }
     }
 
-    function get_other_products($category)
-    {
-        $query = "SELECT * FROM tbl_products as a join tbl_label as b ON a.label_id = b.id_label WHERE b.nama_label='$category' limit 0, 3";
-        return $this->db->query($query);
-    }
-
 }
